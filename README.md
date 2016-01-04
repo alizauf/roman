@@ -1,0 +1,1 @@
+I wrote a little Roman Numerals converter in Python while hanging out in Chicago over winter break. I decided to convert it into javascript to, well, learn javascript. 
