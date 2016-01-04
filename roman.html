@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roman Numerals Converter</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="roman.css">
+
+<style>
+	
+</style>
+
+</head>
+
+<body>
+<div class = "text_areas">
+<h1>Aliza's Roman Numeral Converter</h1>
+<div class="instructions"></div>
+
+<button>Convert to the modern era</button>
+<div class="answer"></div>
+</div>
+
+
+
+<script>
+var year = ""
+var yearLst = [];
+var yearNumerals = 0;
+numerals = {
+	"m":[1000],
+	"d":[500],
+	"c":[100],
+	"l":[50],
+	"x":[10],
+	"v":[5],
+	"i":[1]
+}
+
+$('.instructions').html("Please enter the Roman Numerals you'd like to convert:" + "<br><input type='text' placeholder='ex. MCM'>");
+
+var convertNum = function() {
+year = ($('input').val());
+console.log(year)
+
+
+for (a=0; a<year.length;a++) {
+yearLst.push(numerals[year[a].toLowerCase()]);
+console.log(yearLst);
+};
+
+for (a=0; a<yearLst.length; a++){
+	if (a != yearLst.length - 1) {
+		if (parseInt(yearLst[a]) >= parseInt(yearLst[a+1])) {
+			 yearNumerals += parseInt(yearLst[a])
+	console.log(yearNumerals)
+	console.log("I'm adding")
+}
+
+
+	else{
+		yearNumerals -= parseInt(yearLst[a])
+		console.log(yearNumerals)
+		console.log("I'm subtracting")
+	}
+}
+	else{
+		yearNumerals += parseInt(yearLst[a])
+		console.log(yearNumerals)
+		console.log("I'm adding the last one")
+	}
+}
+console.log(yearNumerals)
+$('button').hide()
+$('.instructions').hide()
+$('.answer').html('You entered: <strong>' + year.toUpperCase() + '</strong>. <br /><br />Nowadays, we call that: <strong>' + yearNumerals + '</strong>' );
+
+}
+
+$('button').click(function() {
+	convertNum();
+});
+
+
+
+</script>
+</body>
+
+</html>
+
+

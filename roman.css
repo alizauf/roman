@@ -1,0 +1,37 @@
+
+	body {
+		background: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/Colosseum-Entrance_LII.jpg");
+	}
+	.text_areas {
+
+		color: black;
+	      text-align: center;
+	      background: white;
+	      margin: auto;
+	      padding: 20px 50px 20px 50px;
+	      border: 7px solid black;
+	      border-radius: 3px;
+	      width: 50%;
+	      font-family: arial;
+	  
+	}
+	.instructions {
+	      color: black;
+	      text-align: center;
+	    }
+
+	button {
+		text-align: center;
+		color: white;
+		background: black;
+		border-radius: 3px;
+		padding: 10px;
+		cursor: pointer;
+		margin: 20px;
+	}
+	input {
+		margin: 20px 0px 0px 0px;
+		border-color: black;
+		border-radius: 3px;
+		padding: 5px;
+	}
