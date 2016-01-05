@@ -1,12 +1,13 @@
-*Lil Roman Numerals thing*
+**Lil Roman Numerals thing**
 
 I wrote a little Roman Numerals converter in Python while hanging out in Chicago over winter break. I decided to convert it into javascript to, well, learn javascript. 
 
-*Some remaining things to do:*
--validate that someone is entering real roman numerals
+**Some remaining things to do:**
 
--allow someone to restart on the second page
+- validate that someone is entering real roman numerals
 
--learn how to host this somewhere besides google docs
+- allow someone to restart on the second page
 
--convert into roman numerals from arabic numerals and allow you to pick
+- learn how to host this somewhere besides google docs
+
+- convert into roman numerals from arabic numerals and allow you to pick
